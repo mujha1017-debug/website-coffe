@@ -220,7 +220,7 @@ header {
 
 /* Hover card  */
 .menu .box:hover {
-  background: aqua;
+  background: #00fff0;
   color: black;
 }
 
