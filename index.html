@@ -4,16 +4,16 @@
     <!-- Pengaturan karakter -->
     <meta charset="UTF-8" />
 
-    <!-- Agar responsive di HP -->
+    <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Judul website  -->
-    <title>Mari Ngopi</title>
+    <!-- Judul Website -->
+    <title>Kopi Kenangan Senja</title>
 
-    <!-- Menghubungkan file CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Icon dari Font Awesome -->
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -21,69 +21,110 @@
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- Navbar -->
-    <header>
-      <!-- logo -->
-      <a href="#" class="logo"
-        ><i>Mari <span>Ngopi.</span></i></a
-      >
 
-      <!-- Menu navigasi -->
-      <nav class="navbar">
+  <body>
+    <!-- ======================= -->
+    <!-- HEADER / NAVBAR -->
+    <!-- ======================= -->
+
+    <header>
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <i>Mari <span>Ngopi.</span></i>
+      </a>
+
+      <!-- Menu Navigasi -->
+      <div class="navbar">
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
         <a href="#menu">Menu</a>
         <a href="#contact">Kontak</a>
-      </nav>
+      </div>
 
-      <!-- Kumpulan icon -->
+      <!-- Icons -->
       <div class="icons">
         <i class="fas fa-search" id="search-btn"></i>
+
         <i class="fas fa-shopping-cart" id="cart-btn"></i>
+
         <i class="fas fa-bars" id="menu-btn"></i>
       </div>
 
-      <!-- Search Form -->
+      <!-- ======================= -->
+      <!-- SEARCH FORM -->
+      <!-- ======================= -->
+
       <div class="search-form">
         <input type="search" placeholder="Cari kopi..." />
+
+        <label class="fas fa-search"></label>
       </div>
 
-      <!-- Shopping Cart -->
+      <!-- ======================= -->
+      <!-- SHOPPING CART -->
+      <!-- ======================= -->
+
       <div class="cart-items-container">
+        <!-- Item 1 -->
         <div class="cart-item">
-          <img src="kopi.png" alt="" />
+          <img src="kopi.png" alt="kopi" />
+
           <div class="content">
-            <h3>Espresso</h3>
-            <div class="price">IDR 15K</div>
+            <h3>Product 1</h3>
+            <div class="price">IDR 30K</div>
           </div>
+
+          <i class="fas fa-trash"></i>
         </div>
 
+        <!-- Item 2 -->
         <div class="cart-item">
-          <img src="kopi.png" alt="" />
+          <img src="kopi.png" alt="kopi" />
+
           <div class="content">
-            <h3>Latte</h3>
+            <h3>Product 2</h3>
             <div class="price">IDR 25K</div>
           </div>
+
+          <i class="fas fa-trash"></i>
         </div>
 
-        <a href="#" class="btn">Checkout</a>
+        <!-- Item 3 -->
+        <div class="cart-item">
+          <img src="kopi.png" alt="kopi" />
+
+          <div class="content">
+            <h3>Product 3</h3>
+            <div class="price">IDR 20K</div>
+          </div>
+
+          <i class="fas fa-trash"></i>
+        </div>
+
+        <!-- Tombol -->
+        <a href="#" class="btn">Checkout Sekarang</a>
       </div>
     </header>
 
-    <!-- Hero -->
+    <!-- ======================= -->
+    <!-- HERO SECTION -->
+    <!-- ======================= -->
+
     <section class="home" id="home">
       <div class="content">
         <h1>
           Mari Nikmati <br />
           Secangkir <span>Kopi</span>
         </h1>
+
         <p>Ngopi "Ngobrol perkara iman"</p>
+
         <p>
           Nikmati kopi terbaik dengan rasa premium dan suasana yang nyaman untuk
           menemani harimu.
@@ -93,16 +134,16 @@
       </div>
     </section>
 
-    <!-- Tentang -->
+    <!-- ======================= -->
+    <!-- ABOUT -->
+    <!-- ======================= -->
+
     <section class="about" id="about">
       <h2 class="heading"><span>Tentang</span> Kami</h2>
 
       <div class="row">
         <div class="image">
-          <img
-            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop"
-            alt=""
-          />
+          <img src="gambar-kopi.avif" alt="kopi" />
         </div>
 
         <div class="content">
@@ -123,101 +164,98 @@
       </div>
     </section>
 
-    <!-- Menu -->
+    <!-- ======================= -->
+    <!-- MENU -->
+    <!-- ======================= -->
+
     <section class="menu" id="menu">
       <h2 class="heading"><span>Menu</span> Kami</h2>
 
       <div class="box-container">
         <div class="box">
-          <img
-            src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=800&auto=format&fit=crop"
-            alt=""
-          />
+          <img src="kopi.png" alt="espresso" />
+
           <h3>Espresso</h3>
+
           <div class="price">IDR 15K</div>
         </div>
 
         <div class="box">
-          <img
-            src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=800&auto=format&fit=crop"
-            alt=""
-          />
+          <img src="kopi.png" alt="cappuccino" />
+
           <h3>Cappuccino</h3>
+
           <div class="price">IDR 20K</div>
         </div>
 
         <div class="box">
-          <img
-            src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=800&auto=format&fit=crop"
-            alt=""
-          />
+          <img src="kopi.png" alt="latte" />
+
           <h3>Latte</h3>
+
           <div class="price">IDR 25K</div>
         </div>
 
         <div class="box">
-          <img
-            src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=800&auto=format&fit=crop"
-            alt=""
-          />
+          <img src="kopi.png" alt="americano" />
+
           <h3>Americano</h3>
+
           <div class="price">IDR 18K</div>
         </div>
 
         <div class="box">
-          <img
-            src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=800&auto=format&fit=crop"
-            alt=""
-          />
+          <img src="kopi.png" alt="mocha" />
+
           <h3>Mocha</h3>
+
           <div class="price">IDR 27K</div>
         </div>
 
         <div class="box">
-          <img
-            src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=800&auto=format&fit=crop"
-            alt=""
-          />
+          <img src="kopi.png" alt="macchiato" />
+
           <h3>Macchiato</h3>
+
           <div class="price">IDR 30K</div>
         </div>
       </div>
     </section>
 
-    <!-- Kontak -->
+    <!-- ======================= -->
+    <!-- CONTACT -->
+    <!-- ======================= -->
+
     <section class="contact" id="contact">
       <h2 class="heading"><span>Kontak</span> Kami</h2>
 
       <div class="row">
-        <!-- Google Maps -->
         <iframe
           class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127146.83940185388!2d101.3431056!3d0.5070672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a934d5d7c8d7%3A0x3039d80b220cc40!2sPekanbaru%2C%20Riau!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid"
-          width="600"
-          height="450"
-          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6162998641826!2d101.4241826745329!3d0.5765813635742253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5afff62c95b9f%3A0xea48ac4db74b8e5c!2sLacof%20Coffee!5e0!3m2!1sid!2sid!4v1779703050476!5m2!1sid!2sid"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
         >
         </iframe>
 
-        <!-- Form -->
         <form action="">
           <h3>Hubungi Kami</h3>
 
           <div class="inputBox">
             <span class="fas fa-user"></span>
+
             <input type="text" placeholder="nama" />
           </div>
 
           <div class="inputBox">
             <span class="fas fa-envelope"></span>
+
             <input type="email" placeholder="email" />
           </div>
 
           <div class="inputBox">
             <span class="fas fa-phone"></span>
+
             <input type="number" placeholder="no hp" />
           </div>
 
@@ -226,24 +264,32 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ======================= -->
+    <!-- FOOTER -->
+    <!-- ======================= -->
+
     <footer class="footer">
       <div class="socials">
-        <a href="https://www.facebook.com/kopikenangan.id/?locale=id_ID"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a href="https://www.instagram.com/kopikenangan.id/?hl=id"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="https://www.instagram.com/kopikenangan.id/?hl=id"
-          ><i class="fab fa-twitter"></i
-        ></a>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
       </div>
 
       <div class="links">
         <a href="#home">Home</a>
+
         <a href="#about">Tentang Kami</a>
+
         <a href="#menu">Menu</a>
+
         <a href="#contact">Kontak</a>
       </div>
 
@@ -252,6 +298,7 @@
       </div>
     </footer>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
