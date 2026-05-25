@@ -1,23 +1,23 @@
-/* ========== */
+/* ======================= */
 /* RESET CSS */
-/* ========== */
+/* ======================= */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   text-decoration: none;
   border: none;
   outline: none;
+
   transition: 0.3s linear;
 }
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Background website */
 body {
   font-family: "Poppins", sans-serif;
   background: #010103;
@@ -28,61 +28,81 @@ section {
   padding: 100px 7%;
 }
 
-/* =========== */
-/* HEADER/NAVBAR */
-/* =========== */
+/* ======================= */
+/* HEADER */
+/* ======================= */
 
 header {
   position: fixed;
+
   top: 0;
   left: 0;
   right: 0;
+
   z-index: 1000;
 
-  /* Flexbox */
   display: flex;
-
-  /* Logo kiri menu kanan */
   justify-content: space-between;
-
-  /* Rata tengah vertikal */
   align-items: center;
 
   padding: 20px 7%;
+
   background: black;
   border-bottom: 1px solid #222;
 }
 
-/* logo */
+/* Logo */
+
 .logo {
   font-size: 32px;
   font-weight: 700;
+
   color: white;
 }
 
-/* Warna titik logo */
 .logo span {
   color: #c59d5f;
 }
 
-/* Link navbar */
+/* Navbar */
+
 .navbar a {
   margin: 0 15px;
+
   color: white;
   font-size: 18px;
 }
 
-/* Hover navbar */
 .navbar a:hover {
   color: #c59d5f;
 }
 
-/* ================= */
+/* Icons */
+
+.icons {
+  display: flex;
+  gap: 20px;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: #c59d5f;
+}
+
+#menu-btn {
+  display: none;
+}
+
+/* ======================= */
 /* SEARCH FORM */
-/* ================= */
+/* ======================= */
 
 .search-form {
   position: absolute;
+
   top: 115%;
   right: -100%;
 
@@ -91,16 +111,18 @@ header {
 
   background: white;
 
+  border-radius: 8px;
+
   display: flex;
   align-items: center;
+
+  overflow: hidden;
 }
 
-/* Saat aktif */
 .search-form.active {
   right: 7%;
 }
 
-/* Input search */
 .search-form input {
   width: 100%;
   height: 100%;
@@ -108,11 +130,26 @@ header {
   padding: 15px;
 
   font-size: 16px;
+
+  color: black;
 }
 
-/* ================= */
+.search-form label {
+  padding-right: 15px;
+
+  font-size: 20px;
+  color: black;
+
+  cursor: pointer;
+}
+
+.search-form label:hover {
+  color: #c59d5f;
+}
+
+/* ======================= */
 /* SHOPPING CART */
-/* ================= */
+/* ======================= */
 
 .cart-items-container {
   position: absolute;
@@ -120,73 +157,88 @@ header {
   top: 100%;
   right: -100%;
 
-  width: 350px;
+  width: 400px;
+  height: 100vh;
+
   background: white;
 
   padding: 20px;
+
+  overflow-y: auto;
 }
 
-/* Saat aktif */
 .cart-items-container.active {
   right: 0;
 }
 
-/* Item cart */
 .cart-item {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 
-  margin-bottom: 20px;
+  position: relative;
+
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px dashed #999;
 }
 
-/* Gambar */
 .cart-item img {
-  width: 80px;
+  width: 100px;
+  height: 100px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
 }
 
-/* Text */
 .cart-item .content h3 {
+  font-size: 30px;
+
   color: black;
-  font-size: 18px;
+
+  margin-bottom: 10px;
 }
 
 .cart-item .price {
-  color: #c59d5f;
+  font-size: 20px;
+
+  color: black;
 }
 
-/* Tombol checkout */
-.cart-items-container .btn {
-  width: 100%;
-  text-align: center;
-}
+.cart-item .fa-trash {
+  position: absolute;
 
-/* Kumpulan icons */
-.icons {
-  display: flex;
-  gap: 20px;
-  font-size: 22px;
+  right: 10px;
+
+  font-size: 28px;
+
+  color: black;
+
   cursor: pointer;
 }
 
-/* Hamburger awalnya disembunyikan */
-#menu-btn {
-  display: none;
+.cart-item .fa-trash:hover {
+  color: red;
 }
 
-/* ========== */
-/* HERO SECTION */
-/* ========== */
+.cart-items-container .btn {
+  width: 100%;
+
+  text-align: center;
+}
+
+/* ======================= */
+/* HERO */
+/* ======================= */
 
 .home {
-  /* Tinggi 1 layar penuh */
   min-height: 100vh;
 
-  /* Flexbox */
   display: flex;
   align-items: center;
 
-  /* Background gambar */
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("istockphoto-1135695208-612x612.webp");
@@ -195,14 +247,13 @@ header {
   background-position: center;
 }
 
-/* Content hero */
 .home .content {
   max-width: 600px;
 }
 
-/* Judul hero  */
 .home .content h1 {
   font-size: 65px;
+
   line-height: 1.2;
 }
 
@@ -210,32 +261,41 @@ header {
   color: #c59d5f;
 }
 
-/* Paragraph hero */
 .home .content p {
   font-size: 18px;
+
   margin: 20px 0;
+
   line-height: 1.8;
 }
 
 /* Tombol */
+
 .btn {
   display: inline-block;
+
   margin-top: 10px;
   padding: 14px 35px;
+
   background: #c59d5f;
+
   color: white;
   font-size: 18px;
+
   border-radius: 8px;
 }
 
-/* Hover tombol */
 .btn:hover {
   letter-spacing: 1px;
 }
 
+/* Heading */
+
 .heading {
   text-align: center;
+
   font-size: 45px;
+
   margin-bottom: 50px;
 }
 
@@ -243,21 +303,19 @@ header {
   color: #c59d5f;
 }
 
-/* ============== */
+/* ======================= */
 /* ABOUT */
-/* ============== */
+/* ======================= */
 
 .about .row {
-  /* Flexbox */
   display: flex;
   align-items: center;
+
   background: #13131a;
 
-  /* Responsive */
   flex-wrap: wrap;
 }
 
-/* Gambar */
 .about .row .image {
   flex: 1 1 45rem;
 }
@@ -266,9 +324,9 @@ header {
   width: 100%;
 }
 
-/* Isi text */
 .about .row .content {
   flex: 1 1 45rem;
+
   padding: 30px;
 }
 
@@ -278,45 +336,52 @@ header {
 
 .about .row .content p {
   font-size: 17px;
+
   padding: 15px 0;
+
   line-height: 1.8;
+
   color: #ccc;
 }
 
-/* ========================= */
+/* ======================= */
 /* MENU */
-/* ========================= */
+/* ======================= */
 
 .menu .box-container {
-  /* Grid */
   display: grid;
-  /* Responsive otomatis */
+
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
   gap: 25px;
 }
 
-/* Card menu */
 .menu .box {
   text-align: center;
+
   border: 1px solid #222;
+
   padding: 40px 20px;
 }
 
-/* Hover card  */
 .menu .box:hover {
-  background: #00fff0;
+  background: #c59d5f;
+
   color: black;
 }
 
 .menu .box img {
   width: 180px;
   height: 180px;
+
   object-fit: cover;
+
   border-radius: 50%;
 }
 
 .menu .box h3 {
   font-size: 25px;
+
   margin: 15px 0;
 }
 
@@ -324,60 +389,81 @@ header {
   font-size: 20px;
 }
 
+/* ======================= */
+/* CONTACT */
+/* ======================= */
+
 .contact .row {
   display: flex;
+
   background: #13131a;
+
   gap: 20px;
 }
 
 .contact .row .map {
   flex: 1 1 45rem;
+
   width: 100%;
+
   min-height: 450px;
 }
 
 .contact .row form {
   flex: 1 1 45rem;
+
   padding: 50px 20px;
+
   text-align: center;
 }
 
 .contact .row form h3 {
   font-size: 35px;
+
   margin-bottom: 30px;
 }
 
 .inputBox {
   display: flex;
   align-items: center;
+
   margin: 20px 0;
+
   background: #010103;
+
   border: 1px solid #222;
 }
 
 .inputBox span {
   color: white;
+
   font-size: 20px;
+
   padding: 20px;
 }
 
 .inputBox input {
   width: 100%;
+
   padding: 20px;
+
   font-size: 17px;
+
   background: none;
+
   color: white;
 }
 
-/* ========== */
+/* ======================= */
 /* FOOTER */
-/* ========== */
+/* ======================= */
 
 .footer {
   background: #c59d5f;
+
   text-align: center;
+
   padding: 15px 7%;
-  border-top: 1px solid #222;
 }
 
 .footer .socials {
@@ -386,7 +472,9 @@ header {
 
 .footer .socials a {
   color: white;
+
   font-size: 18px;
+
   margin: 0 8px;
 }
 
@@ -400,8 +488,8 @@ header {
 
 .footer .links a {
   color: white;
+
   margin: 0 10px;
-  font-size: 15px;
 }
 
 .footer .links a:hover {
@@ -416,38 +504,41 @@ header {
   color: #222;
 }
 
-/* ========== */
-/* Responsiv */
-/* ========== */
+/* ======================= */
+/* RESPONSIVE */
+/* ======================= */
 
 @media (max-width: 768px) {
   #menu-btn {
     display: inline-block;
   }
 
-  .contact .row {
-    flex-wrap: wrap;
-  }
-  /* navbar HP */
   .navbar {
     position: absolute;
+
     top: 100%;
     right: -100%;
+
     background: #13131a;
+
     width: 250px;
     height: 100vh;
   }
 
-  /* Saat active */
   .navbar.active {
     right: 0;
   }
 
-  /* Menu vertikal */
   .navbar a {
     display: block;
+
     margin: 25px;
+
     font-size: 20px;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
   }
 
   .home .content h1 {
@@ -456,5 +547,13 @@ header {
 
   .heading {
     font-size: 35px;
+  }
+
+  .search-form {
+    width: 90%;
+  }
+
+  .cart-items-container {
+    width: 90%;
   }
 }
